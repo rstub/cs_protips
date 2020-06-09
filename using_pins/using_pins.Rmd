@@ -132,4 +132,4 @@ Go try `pins` on your own!
 * We also have a ton of resources available for pins right at the `pins` website here: <http://pins.rstudio.com/>.
 * Any issues? Let us know here: <https://github.com/rstudio/pins/issues>. 
 
-Last but not least, let us know how you get on with pins! Reach out to your Customer Success Representative, or send a note to us at <sales@rstudio.com>.
+Last but not least, let us know how you get on with pins! Reach out to your Customer Success Representative, or send a note to us at <info@rstudio.com>.
