@@ -26,7 +26,7 @@ Like that one piece of furniture in your living room that you _need_, but you ju
 
 Think about some of your workflows.  Are you:  
 
-* Using `read.csv()` to bring in emailed data? 
+* Using `read.csv()`{.R} to bring in emailed data?
 * Saving `.Rds` or `.RData` objects to be called later? 
 * Sharing your model or data across multiple apps?
 * Redeploying your app every time the supporting data is updated?
@@ -53,17 +53,17 @@ To utilize `pins` with Connect make sure you:
 # Prework   
 **API keys** will let the RStudio IDE communicate with Connect on our behalf, acting as our credentials.  The steps below will save your credentials for future work, so these are one-time only steps:
 
-1. Create an API key from RStudio Connect^[See: https://docs.rstudio.com/connect/user/api-keys/] Give this key any name you like, such as `CONNECT_API_KEY` and be certain to copy the value to your clipboard.
+1. Create an API key from RStudio Connect^[See: https://docs.rstudio.com/connect/user/api-keys/] Give this key any name you like, such as `CONNECT_API_KEY`{.sh} and be certain to copy the value to your clipboard.
 1. Return to the RStudio IDE and save your API key as a system environment variable in your .Rprofile file:
-    a. In the Console, enter `usethis::edit_r_profile()` to open your .Rprofile for editing.
-    a. In the .RProfile, insert `Sys.setenv( "CONNECT_API_KEY" = "paste key value")`.
-1. For convenience, save your RStudio Connect server address as a system environment variable in your .RProfile as well. Example: `Sys.setenv("CONNECT_SERVER" = "https://your-server-address.com/")`
+    a. In the Console, enter `usethis::edit_r_profile()`{.R} to open your .Rprofile for editing.
+    a. In the .RProfile, insert `Sys.setenv( "CONNECT_API_KEY" = "paste key value")`{.R}.
+1. For convenience, save your RStudio Connect server address as a system environment variable in your .RProfile as well. Example: `Sys.setenv("CONNECT_SERVER" = "https://your-server-address.com/")`{.R}
 1. Save and close the file.
 1. Restart R (shift + cmd + F10).
 
-If you're using git, it's a good idea to add your .RProfile to your .gitignore, perhaps with `usethis::use_git_ignore()`, to ensure you're not publishing your API key to your version control system.
+If you're using git, it's a good idea to add your .RProfile to your .gitignore, perhaps with `usethis::use_git_ignore()`{.R}, to ensure you're not publishing your API key to your version control system.
 
-**Install  `pins`.** The `pins` package is available on CRAN, and was at version `r packageVersion("pins")` at the time of this writing.  Install `pins` with `install.packages("pins")`.  
+**Install  `pins`.** The `pins` package is available on CRAN, and was at version `r packageVersion("pins")` at the time of this writing.  Install `pins` with `install.packages("pins")`{.R}.
 
 Now let's get cooking! `r if(knitr::is_html_output()) emo::ji("fried_egg") else knitr::include_graphics("template_files/emoji_fried_egg.png")`
 
