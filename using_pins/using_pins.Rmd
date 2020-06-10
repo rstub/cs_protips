@@ -65,7 +65,7 @@ If you're using git, it's a good idea to add your .RProfile to your .gitignore, 
 
 **Install  `pins`.** The `pins` package is available on CRAN, and was at version `r packageVersion("pins")` at the time of this writing.  Install `pins` with `install.packages("pins")`.  
 
-Now let's get cooking! `r emo::ji("fried_egg")`
+Now let's get cooking! `r if(knitr::is_html_output()) emo::ji("fried_egg") else knitr::include_graphics("template_files/emoji_fried_egg.png")`
 
 # Pinning to RStudio Connect
 The first step in using pins is to "Register" the board. This just means you're identifying a location where you can store resources.  
@@ -122,7 +122,7 @@ Don't worry, it's easy to address: In the RStudio Connect content settings panel
 
 Click the **Refresh Report** button (*the button!* don't just refresh your browser window) to re-render your document with the new environment variables in place. Then, go ahead... do a little dance to celebrate!  You've published an ETL document that publishes a pin to Connect! 
 
-To finish this little gem, click the **Schedule** button and establish a schedule for your ETL (and resulting pin) to refresh.  Now you can point your customer-facing data analysis at this pin to always have a fresh source of data behind it. Dazzling! `r emo::ji("sparkles")`
+To finish this little gem, click the **Schedule** button and establish a schedule for your ETL (and resulting pin) to refresh.  Now you can point your customer-facing data analysis at this pin to always have a fresh source of data behind it. Dazzling! `r if(knitr::is_html_output()) emo::ji("sparkles") else knitr::include_graphics("template_files/emoji_sparkles.png")`
 
 # Where Do I Go From Here? 
 At this point, you know what a pin is, whether pins will be useful for your workflow, and how to implement them. What next?
